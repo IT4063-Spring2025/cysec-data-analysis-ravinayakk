@@ -18,8 +18,6 @@ We will use to predict whether there is anomaly or not. This is a classification
 - Open the assignment root folder in VSCode.
   - If you get a notification asking you to install the recommended extensions, go ahead and do that.
 - using the terminal, install the dependencies for this project:
-  - if you're using `poetry`, run `poetry install`.
-  - If you're using `pipenv`, run `pipenv install`
   - if you're using `pip`, run `pip install -r requirements.txt`
 - Open the `python-exercises.ipynb` Notebook in VSCode
 - Make sure you have the right kernel selected for the notebook. Use this [guide](https://it4063c.github.io/guides/FAQ/vscode-jupyter) if you need help.
