@@ -39,29 +39,29 @@ You'll also find some tips and links to documentations that will help you comple
 ## 💭 Reflection and Self Assessment
 
 **I learned:** (repeat as needed)
-- .
+- I learned about combining machine learning models with cyber security data. 
 
 **I struggled with:** (repeat as needed)
-- .
+- I didn't really struggle because most of the work that I did in the lab was work that I had already completed in previous assignments. 
 
 **I need the instructor to help me with:** (repeat as needed)
-- .
+- No help was needed from the instructor. 
 
 **How long did it take you to complete this assignment? and reflect on that**
-[ ] hours.
+[1] hours.
 
 **If I were to do this assignment again, I would:** (repeat as needed)
-- .
+- I would look over some documentation over the models that were used in this assignment. 
 
-**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [ ] out of 20.
+**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [20] out of 20.
 
 --------------------
 ## 📚 References and Citations
 **I used the following links, books, and other resources in my work:** (repeat as needed)
-- .
-  
+- I used documentation over Support Vector Machine models. 
+
 **I received help from the following people:** (repeat as needed)
-- .
+- I received help from no one. 
 
 ---
 ## Copyrights and License
