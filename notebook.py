@@ -24,7 +24,7 @@ warnings.filterwarnings("ignore")
 # 
 # TODO: Load the given dataset.
 
-# In[6]:
+# In[2]:
 
 
 link = "./Data/CySecData.csv"
@@ -35,7 +35,7 @@ df = pd.read_csv(link)
 # # Step 3: Display the first few rows of the dataset
 # TODO: Import the necessary libraries for data analysis and visualization.
 
-# In[7]:
+# In[3]:
 
 
 df.head()
@@ -45,7 +45,7 @@ df.head()
 # 
 # TODO: Provide a summary of the dataset.
 
-# In[8]:
+# In[4]:
 
 
 df.describe()
@@ -54,7 +54,7 @@ df.describe()
 # # Step 5: Creating dummy variables
 # TODO: Create dummy variables for the categorical columns except for the label column "class".
 
-# In[9]:
+# In[5]:
 
 
 categorical_cols = ['protocol_type', 'service', 'flag']
@@ -67,7 +67,7 @@ dummy_df.head()
 # # Step 6: Dropping the target column
 # TODO: Drop the target column 'class' from the dataset.
 
-# In[10]:
+# In[6]:
 
 
 df_features = dummy_df.drop('class', axis=1)
@@ -78,7 +78,7 @@ df_features.head()
 # # Step 7: Importing the Standard Scaler
 # TODO: Import the `StandardScaler` from `sklearn.preprocessing`.
 
-# In[12]:
+# In[7]:
 
 
 from sklearn.preprocessing import StandardScaler
@@ -87,7 +87,7 @@ from sklearn.preprocessing import StandardScaler
 # # Step 8: Scaling the dataset
 # TODO: Scale the dataset using the `StandardScaler`.
 
-# In[ ]:
+# In[8]:
 
 
 from sklearn.preprocessing import StandardScaler
@@ -100,7 +100,7 @@ X_scaled = scaler.fit_transform(df_features)
 # # Step 9: Splitting the dataset
 # TODO: Split the dataset into features (X) and target (y).
 
-# In[ ]:
+# In[9]:
 
 
 from sklearn.preprocessing import StandardScaler
@@ -116,7 +116,7 @@ X_scaled = scaler.fit_transform(X)
 # # Step 10: Importing the required libraries for the models
 # TODO: Import the necessary libraries for model training and evaluation.
 
-# In[17]:
+# In[10]:
 
 
 from sklearn.model_selection import train_test_split
@@ -124,9 +124,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
@@ -134,23 +131,20 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # # Step 11: Defining the models
 # TODO: Define the models to be evaluated.
 
-# In[18]:
+# In[11]:
 
 
 models = {
     "Logistic Regression": LogisticRegression(max_iter=1000),
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     "Support Vector Machine": SVC(),
-    "Decision Tree": DecisionTreeClassifier(random_state=42),
-    "Naive Bayes": GaussianNB(),
-    "K-Nearest Neighbors": KNeighborsClassifier()
 }
 
 
 # # Step 12: Evaluating the models
 # TODO: Evaluate the models using 10 fold cross-validation and display the mean and standard deviation of the accuracy.
 
-# In[19]:
+# In[12]:
 
 
 from sklearn.model_selection import cross_val_score
